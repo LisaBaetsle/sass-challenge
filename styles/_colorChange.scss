@@ -1,0 +1,28 @@
+
+$colorBlueTitle: #6b8eff;
+$colorRedTitle: rgb(255, 92, 92);
+
+@mixin colorChange ($color, $bgColor) {
+    color: $color;
+    background-color: $bgColor;
+}
+
+.blue {
+    @include colorChange(blue, black);
+
+    h1,
+    h2,
+    h6 {
+        color: $colorBlueTitle;
+    }
+}
+
+.red {
+    @include colorChange(red, rgb(255, 214, 161));
+
+    h1,
+    h2,
+    h6 {
+        color: $colorRedTitle;
+    }
+}
