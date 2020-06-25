@@ -1,3 +1,4 @@
+@import "_variables";
 @import "_colorChange";
 
 @mixin box-shadow {
@@ -5,8 +6,6 @@
   -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
 }
-
-$padding: 16px;
 
 body {
   font: 100% "Space Mono", monospace;
@@ -35,7 +34,7 @@ article {
     border: 1px silver solid;
     @include box-shadow;
     padding: $padding;
-    margin: 16px;
+    margin: $margin;
     clear: both;
     overflow: auto;
     box-sizing: border-box;
@@ -87,7 +86,7 @@ h6 {
 .message {
   border: 1px solid #ccc;
   padding: $padding;
-  margin: 16px;
+  margin: $margin;
   color: #2748b3;
   background-color: #000;
 }
